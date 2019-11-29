@@ -1,0 +1,967 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-family: "Trebuchet MS", Arial, Tahoma;
+}
+
+.center {
+    margin: 0 auto;
+    /*centralizando o conteúdo no navegador*/
+    max-width: 1000px;
+    /*Largura maxima do layout*/
+    width: 100%;
+    /*ajuste do layout à tela*/
+}
+
+/*.clearfix usado para adicionar um espaço vazio antes e depois dos elementos
+evitando que os floats se aglomerem.*/
+
+.clearfix:before, .clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/*fim do clearfix*/
+
+/* INICIO CONTAINER */
+
+.container {
+    width: 100%;
+    /*ajuste do layout à tela*/
+    height: auto;
+    margin: 5px auto 0 auto;
+    text-align: left;
+}
+
+/* FIM CONTAINER */
+
+/* INICIO TOPO */
+
+.topo {
+    width: 100%;
+    /* 1000px ÷ 1000px = 1 * 100 = 100% */
+    height: 140px;
+    background: #161C21;
+    margin-bottom: 5px;
+    position: relative;
+}
+
+.topo h1 {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 2.1875em;
+    /* 35px ÷ 16px = 2.1875em */
+    color: #fff;
+    position: absolute;
+    top: 30px;
+    left: 10px;
+}
+
+.topo span {
+    font-family: "Trebuchet MS", Helvetica, sans-serif;
+    font-size: 1em;
+    /* Tamanho padrão da fonte dos navegadores*/
+    color: #D67128;
+    position: absolute;
+    top: 90px;
+    left: 10px;
+}
+
+.topo .search {
+    width: 21%;
+    font-size: 0.875em;
+    /* 14px ÷ 16px = 0.875em */
+    float: right;
+    position: absolute;
+    top: 50px;
+    right: 50px;
+}
+
+.topo .search input {
+    width: 100%;
+    border: 1px solid #ccc;
+    padding: 10px;
+}
+
+/* FIM TOPO */
+
+/* INICIO MENU */
+
+.menu-superior {
+    width: 100%;
+    height: 40px;
+    background: #EFEDDF;
+    border-top: 1px solid;
+    border-bottom: 1px solid;
+    margin-bottom: 5px;
+}
+
+.menu-superior ul {
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+.menu-superior ul li {
+    float: left;
+}
+
+.menu-superior ul li a {
+    text-decoration: none;
+    color: #000;
+    font-size: 0.875em;
+    /* 14px ÷ 16px = 0.875em */
+    padding: 10px;
+    display: block;
+}
+
+.menu-superior ul li a:hover {
+    color: #fff;
+    background: #4D6173;
+}
+
+.three-line {
+    float: left;
+    color: #4D6173;
+    font-size: 1em;
+    display: none;
+}
+
+.DBe {
+    float: left;
+    margin-left: 10px;
+    display: none;
+    color: #fff;
+    font-size: 20px;
+}
+
+#bloco {
+    background:#4D6173;
+    min-width: 100%;
+    background-size: cover;
+    text-align: center;
+}
+
+/* FIM MENU */
+
+/* INICIO CONTENT */
+
+.content {
+    width: 64%;
+    /* 640px ÷ 1000px = 0.64 * 100 = 64% */
+    height: auto;
+    float: left;
+}
+
+/* FIM CONTENT */
+
+/* INICIO DESTAQUES */
+
+.destaques {
+    background: #EFEDDF;
+    width: 100%;
+    height: auto;
+    float: right;
+}
+
+.destaques h1 {
+    background: #4D6173;
+    font-size: 1.25em;
+    /* 20px ÷ 16px = 1.25em */
+    color: #fff;
+    text-transform: uppercase;
+    height: 25px;
+    padding: 10px;
+}
+
+.destaques h2 {
+    font-size: 1.25em;
+    /* 20px ÷ 16px = 1.25em */
+    margin: 5px 0 5px 0;
+}
+
+.destaques p {
+    margin: 10px;
+    font-size: 0.875em;
+    /* 14px ÷ 16px = 0.875em */
+    line-height: 1.25em;
+    /* 20px ÷ 16px = 1.25em */
+}
+
+.destaques img {
+    float: left;
+    margin: 10px;
+}
+
+.destaques a {
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+    background: #4D6173;
+    padding: 2px 2px 2px 2px;
+    color: #fff;
+    font-size: 0.875em;
+    /* 14px ÷ 16px = 0.875em */
+}
+
+.destaques a:hover {
+    text-decoration: underline;
+}
+
+/* FIM DESTAQUES */
+
+/* INICIO BOX BACK-END */
+
+.back-end {
+    background: #EFEDDF;
+    width: 49.21875%;
+    /* 315px ÷ 640px = 0.4921875 * 100 = 49.21875% */
+    height: auto;
+    float: left;
+    margin-top: 8px;
+}
+
+.back-end h1 {
+    background: #4D6173;
+    font-size: 1.25em;
+    /* 20px ÷ 16px = 1.25em*/
+    color: #fff;
+    text-transform: uppercase;
+    height: 25px;
+    padding: 10px;
+}
+
+.back-end h2 {
+    font-size: 1.25em;
+    /* 20px ÷ 16px = 1.25em*/
+    margin: 10px 0 10px 10px;
+}
+
+.back-end p {
+    font-size: 0.875em;
+    /* 14px ÷ 16px = 0.875em */
+    line-height: 1.25em;
+    /* 20px ÷ 16px = 1.25em*/
+    margin: 0 10px 10px 10px;
+}
+
+.back-end a {
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+    background: #4D6173;
+    padding: 2px 2px 2px 2px;
+    color: #fff;
+    font-size: 0.875em;
+    /* 14px ÷ 16px = 0.875em */
+}
+
+.back-end a:hover {
+    text-decoration: underline;
+}
+
+.back-end h3 {
+    background: #4D6173;
+    font-size: 1.0625em;
+    /* 17px ÷ 16px = 1.0625em */
+    color: #fff;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.back-end ul {
+    margin: 0 0 10px 30px;
+    padding: 0;
+}
+
+.back-end ul li {
+    font-size: 0.9375em;
+    /*15px ÷ 16px = 0.9375em */
+}
+
+/* FIM BOX BACK-END */
+
+/* INICIO BOX FRONT-END */
+
+.front-end {
+    background: #EFEDDF;
+    width: 49.21875%;
+    /* 315px ÷ 640px = 0.4921875 * 100 = 49.21875% */
+    height: auto;
+    float: right;
+    margin: 8px 0 10px 0;
+}
+
+.front-end h1 {
+    background: #4D6173;
+    font-size: 1.25em;
+    /*20px ÷ 16px = 1.25em */
+    color: #fff;
+    text-transform: uppercase;
+    height: 25px;
+    padding: 10px;
+}
+
+.front-end h2 {
+    font-size: 1.25em;
+    /*20px ÷ 16px = 1.25em */
+    margin: 10px 0 10px 10px;
+}
+
+.front-end p {
+    font-size: 0.875em;
+    /*14px ÷ 16px = 0.875em */
+    line-height: 1.25em;
+    /* 20px ÷ 16px = 1.25em */
+    margin: 0 10px 10px 10px;
+}
+
+.front-end a {
+    text-decoration: none;
+    float: right;
+    margin-right: 10px;
+    background: #4D6173;
+    padding: 2px 2px 2px 2px;
+    color: #fff;
+    font-size: 0.875em;
+    /*14px ÷ 16px = 0.875em */
+}
+
+.front-end a:hover {
+    text-decoration: underline;
+}
+
+.front-end h3 {
+    background: #4D6173;
+    font-size: 1.0625em;
+    /*17px ÷ 16px = 1.0625em */
+    color: #fff;
+    text-align: center;
+    margin: 15px 0 10px 0;
+}
+
+.front-end ul {
+    margin: 0 0 10px 30px;
+    padding: 0;
+}
+
+.front-end ul li {
+    font-size: 0.9375em;
+    /* 15px ÷ 16px = 0.9375em */
+}
+
+/* FIM BOX FRONT-END */
+
+/* INICIO SIDEBAR */
+
+.sidebar {
+    background: #EFEDDF;
+    width: 35%;
+    /*350px ÷ 1000px = 0.35 * 100 = 35%*/
+    height: auto;
+    float: right;
+    border: 1px solid #ddd;
+}
+
+.sidebar .maislidos {
+    width: 100%;
+    margin: 0 auto;
+    background: #fff;
+    padding-bottom: 10px;
+}
+
+.sidebar .maislidos h1 {
+    background: #4D6173;
+    font-size: 1.25em;
+    /* 20px ÷ 16px = 1.25em */
+    color: #fff;
+    text-transform: uppercase;
+    height: 25px;
+    padding: 10px;
+}
+
+.sidebar ul {
+    margin: 10px 0 10px 25px;
+    padding: 5px;
+}
+
+.sidebar ul li {
+    font-size: 0.9375em;
+    /* 15px ÷ 16px = 0.9375em */
+}
+
+.sidebar ul li a {
+    text-decoration: none;
+    color: #000;
+}
+
+.sidebar ul li a:hover {
+    text-decoration: underline;
+}
+
+.publicidade ul .nostyle {
+    list-style: none !important;
+    margin: 0 auto;
+    padding: 5px;
+}
+
+.publicidade ul img {
+    margin: 3%;
+}
+
+.publicidade ul li {
+    display: inline;
+    float: left;
+}
+
+/* FIM SIDEBAR */
+
+/* INICIO RODAPE */
+
+.rodape {
+    clear: both;
+    background: #161C21;
+    width: 100%;
+    height: 60px;
+    position: relative;
+    margin-bottom: 5px;
+}
+
+.rodape .rodape-esquerdo {
+    text-align: left;
+    width: 40%;
+    /* 400px ÷ 1000px = 0.40 * 100 = 40% */
+    height: auto;
+    float: left;
+    position: absolute;
+    bottom: 15px;
+    left: 10px;
+}
+
+.rodape .rodape-esquerdo p {
+    font-size: 0.75em;
+    /* 12px ÷ 16px = 0.75em */
+    color: #fff;
+}
+
+.rodape .rodape-direito {
+    text-align: right;
+    width: 60%;
+    /* 600px ÷ 1000px = 0.60 * 100 = 60% */
+    height: auto;
+    float: right;
+    position: absolute;
+    bottom: 15px;
+    right: 10px;
+}
+
+.rodape .rodape-direito p {
+    font-size: 0.75em;
+    /* 12px ÷ 16px = 0.75em */
+    color: #fff;
+}
+
+/* FIM RODAPE */
+
+/*
+1200px – Desktops, notebooks com monitores widescreen
+**********************************************************/
+
+@media screen and (max-width:1200px) {
+    .center {
+        margin: 0 auto;
+        /*centralizando o conteúdo no navegador*/
+        max-width: 1200px;
+        /*Largura maxima do layout*/
+        width: 100%;
+        /*ajuste do layout à tela*/
+    }
+    .topo .search {
+        width: 17%;
+    }
+}
+
+/*
+960px – Tablets no formato paisagem e alguns monitores mais antigos
+***********************************************************/
+
+@media screen and (max-width:960px) {
+    .publicidade ul .nostyle {
+        list-style: none !important;
+        margin: -10px auto;
+        padding: 5px;
+    }
+    .publicidade ul img {
+        margin: -5px;
+    }
+    .publicidade ul li {
+        display: inline;
+        float: left;
+    }
+    .topo .search {
+        width: 22%;
+    }
+}
+
+/*
+768px – Tablets no formato retrato, como iPad
+***********************************************************/
+
+@media screen and (max-width:768px) {
+    .topo .search {
+        width: 27%;
+    }
+    .menu-superior ul {
+        display: none;
+        padding-top: 35px;
+        text-align: center;
+    }
+    .menu-superior ul li {
+        float: none;
+        background: #4D6173;
+        border-bottom: 1px solid #fff;
+    }
+
+    .menu-superior ul li a{
+        color: #fff;
+    }
+
+    .three-line {
+        display: block;
+        color: #4D6173;
+        font-size: 22px;
+        text-decoration: none;
+        align-content: center;
+    }
+    nav ul.menu-responsive {
+        display: block;
+    }
+    .content {
+        width: 100%;
+        /* 640px ÷ 1000px = 0.64 * 100 = 64% */
+        height: auto;
+        float: left;
+    }
+    .destaques {
+        background: #EFEDDF;
+        width: 100%;
+        height: auto;
+        float: right;
+    }
+    .destaques h1 {
+        background: #4D6173;
+        font-size: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+        color: #fff;
+        text-transform: uppercase;
+        height: 25px;
+        padding: 10px;
+    }
+    .destaques h2 {
+        font-size: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+        margin: 5px 0 5px 0;
+    }
+    .destaques p {
+        font-size: 0.875em;
+        /* 14px ÷ 16px = 0.875em */
+        line-height: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+    }
+    .destaques img {
+        float: left;
+        margin: 10px;
+    }
+    .destaques a {
+        text-decoration: none;
+        float: right;
+        margin-right: 10px;
+        background: #4D6173;
+        /*padding: 2px 2px 2px 2px;*/
+        color: #fff;
+        font-size: 0.875em;
+        /* 14px ÷ 16px = 0.875em */
+    }
+    .destaques a:hover {
+        text-decoration: underline;
+    }
+    .back-end {
+        background: #EFEDDF;
+        width: 49.21875%;
+        /* 315px ÷ 640px = 0.4921875 * 100 = 49.21875% */
+        height: auto;
+        float: left;
+        margin-top: 8px;
+    }
+    .back-end h1 {
+        background: #4D6173;
+        font-size: 1.25em;
+        /* 20px ÷ 16px = 1.25em*/
+        color: #fff;
+        text-transform: uppercase;
+        height: 25px;
+        padding: 10px;
+    }
+    .back-end h2 {
+        font-size: 1.25em;
+        /* 20px ÷ 16px = 1.25em*/
+        margin: 10px;
+    }
+    .back-end p {
+        font-size: 0.875em;
+        /* 14px ÷ 16px = 0.875em */
+        line-height: 1.25em;
+        /* 20px ÷ 16px = 1.25em*/
+        margin: 10px;
+    }
+    .back-end a {
+        text-decoration: none;
+        float: right;
+        margin-right: 10px;
+        background: #4D6173;
+        padding: 2px 2px 2px 2px;
+        color: #fff;
+        font-size: 0.875em;
+        /* 14px ÷ 16px = 0.875em */
+    }
+    .back-end a:hover {
+        text-decoration: underline;
+    }
+    .back-end h3 {
+        background: #4D6173;
+        font-size: 1.0625em;
+        /* 17px ÷ 16px = 1.0625em */
+        color: #fff;
+        text-align: center;
+        margin: 15px 0 10px 0;
+    }
+    .back-end ul {
+        margin: 0 0 10px 30px;
+        padding: 0;
+    }
+    .back-end ul li {
+        font-size: 0.9375em;
+        /*15px ÷ 16px = 0.9375em */
+    }
+    /* FIM BOX BACK-END */
+    /* INICIO BOX FRONT-END */
+    .front-end {
+        background: #EFEDDF;
+        width: 49.21875%;
+        /* 315px ÷ 640px = 0.4921875 * 100 = 49.21875% */
+        height: auto;
+        float: right;
+        margin: 8px 0 10px 0;
+    }
+    .front-end h1 {
+        background: #4D6173;
+        font-size: 1.25em;
+        /*20px ÷ 16px = 1.25em */
+        color: #fff;
+        text-transform: uppercase;
+        height: 25px;
+        padding: 10px;
+    }
+    .front-end h2 {
+        font-size: 1.25em;
+        /*20px ÷ 16px = 1.25em */
+        margin: 10px 0 10px 10px;
+    }
+    .front-end p {
+        font-size: 0.875em;
+        /*14px ÷ 16px = 0.875em */
+        line-height: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+        margin: 0 10px 10px 10px;
+    }
+    .front-end a {
+        text-decoration: none;
+        float: right;
+        margin-right: 10px;
+        background: #4D6173;
+        padding: 2px 2px 2px 2px;
+        color: #fff;
+        font-size: 0.875em;
+        /*14px ÷ 16px = 0.875em */
+    }
+    .front-end a:hover {
+        text-decoration: underline;
+    }
+    .front-end h3 {
+        background: #4D6173;
+        font-size: 1.0625em;
+        /*17px ÷ 16px = 1.0625em */
+        color: #fff;
+        text-align: center;
+        margin: 15px 0 10px 0;
+    }
+    .front-end ul {
+        margin: 0 0 10px 30px;
+        padding: 0;
+    }
+    .front-end ul li {
+        font-size: 0.9375em;
+        /* 15px ÷ 16px = 0.9375em */
+    }
+    /* FIM BOX FRONT-END */
+    .sidebar {
+        background: #EFEDDF;
+        width: 100%;
+        /*350px ÷ 1000px = 0.35 * 100 = 35%*/
+        height: auto;
+        float: right;
+        border: 1px solid #ddd;
+    }
+    .sidebar .maislidos {
+        width: 100%;
+        margin: 0 auto;
+        background: #fff;
+        padding-bottom: 10px;
+    }
+    .sidebar .maislidos h1 {
+        background: #4D6173;
+        font-size: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+        color: #fff;
+        text-transform: uppercase;
+        height: 25px;
+        padding: 10px;
+    }
+    .sidebar ul {
+        margin: 10px 0 10px 25px;
+        padding: 5px;
+    }
+    .sidebar ul li {
+        font-size: 0.9375em;
+        /* 15px ÷ 16px = 0.9375em */
+    }
+    .sidebar ul li a {
+        text-decoration: none;
+        color: #000;
+    }
+    .sidebar ul li a:hover {
+        text-decoration: underline;
+    }
+    .publicidade ul .nostyle {
+        list-style: none !important;
+        margin: 0 auto;
+        padding: 5px;
+    }
+    .publicidade ul img {
+        margin: 3%;
+    }
+    .publicidade ul li {
+        display: inline;
+        float: left;
+    }
+    /* FIM SIDEBAR */
+    /* INICIO RODAPE */
+    .rodape {
+        clear: both;
+        background: #161C21;
+        width: 100%;
+        height: 60px;
+        position: relative;
+        margin-bottom: 5px;
+    }
+    .rodape .rodape-esquerdo {
+        text-align: left;
+        width: 60%;
+        /* 600px ÷ 1000px = 0.60 * 100 = 60% */
+        height: auto;
+        float: left;
+        position: absolute;
+        bottom: 15px;
+        left: 10px;
+    }
+    .rodape .rodape-esquerdo p {
+        font-size: 0.75em;
+        /* 12px ÷ 16px = 0.75em */
+        color: #fff;
+    }
+    .rodape .rodape-direito {
+        text-align: right;
+        width: 40%;
+        /* 400px ÷ 1000px = 0.4 * 100 = 40% */
+        height: auto;
+        float: right;
+        position: absolute;
+        bottom: 15px;
+        right: 10px;
+    }
+    .rodape .rodape-direito p {
+        font-size: 0.75em;
+        /* 12px ÷ 16px = 0.75em */
+        color: #fff;
+    }
+    /* FIM RODAPE */
+}
+
+/*
+480px – Smartphones no formato paisagem com tela pequena
+***********************************************************/
+
+@media screen and (max-width:480px) {
+    .topo {
+        width: 100%;
+        height: 120px;
+        background: #161C21;
+    }
+    .topo h1 {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 1.875em;
+        /* 30px ÷ 16px = 2.1875em */
+        color: #fff;
+        margin-right: 35px;
+        position: relative;
+        text-align: center;
+        top: 30px;
+    }
+    .topo span {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+        /* Tamanho padrão da fonte dos navegadores*/
+        color: #D67128;
+        margin-left: 110px;
+        text-align: center;
+        position: relative;
+        top: 25px;
+    }
+    .topo .search {
+        display: none;
+        /*Remover o campo de pesquisa*/
+    }
+    .content {
+        width: 100%;
+        height: auto;
+        float: left;
+    }
+    .destaques {
+        background: #EFEDDF;
+        width: 100%;
+        height: auto;
+        float: right;
+    }
+    .destaques p {
+        margin: 10px;
+    }
+    .back-end {
+        background: #EFEDDF;
+        width: 100%;
+        height: auto;
+        float: left;
+        margin-top: 8px
+    }
+    .back-end h2 {
+        margin-left: 10px;
+    }
+    .back-end p {
+        margin: 10px;
+    }
+    .front-end {
+        background: #EFEDDF;
+        width: 100%;
+        /* 315px ÷ 640px = 0.4921875 * 100 = 49.21875% */
+        height: auto;
+        float: right;
+        margin: 8px 0 10px 0;
+    }
+    .front-end h2 {
+        margin: 10px;
+    }
+}
+
+/*
+320px – Smartphones no formato retrato com tela pequena
+***********************************************************/
+
+@media screen and (max-width:320px) {
+    .topo {
+        width: 100%;
+        height: 120px;
+        background: #161C21;
+    }
+    .topo h1 {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 1.875em;
+        /* 30px ÷ 16px = 2.1875em */
+        color: #fff;
+        margin-right: 20px;
+        position: relative;
+        text-align: center;
+        top: 30px;
+    }
+    .topo span {
+        font-family: "Trebuchet MS", Helvetica, sans-serif;
+        font-size: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+        /* Tamanho padrão da fonte dos navegadores*/
+        color: #D67128;
+        margin-left: 30px;
+        text-align: center;
+        position: relative;
+        top: 25px;
+        /* left: 10px;*/
+    }
+    .topo .search {
+        display: none;
+        /*Remover o campo de pesquisa*/
+    }
+    .content {
+        width: 100%;
+        /* 640px ÷ 1000px = 0.64 * 100 = 64% */
+        height: auto;
+        float: left;
+    }
+    .destaques {
+        background: #EFEDDF;
+        width: 100%;
+        height: auto;
+        float: right;
+    }
+    .destaques img {
+        width: 100%;
+        margin: 2px;
+    }
+    .destaques h2 {
+        margin: 10px;
+    }
+    .destaques p {
+        margin: 10px;
+        font-size: 0.875em;
+        /* 14px ÷ 16px = 0.875em */
+        line-height: 1.25em;
+        /* 20px ÷ 16px = 1.25em */
+    }
+    .publicidade ul .nostyle {
+        width: 46%;
+        list-style: none !important;
+        margin: 0;
+        padding: px;
+    }
+    .publicidade ul img {
+        margin: 5%;
+    }
+    .publicidade ul li {
+        display: inline;
+    }
+    .rodape .rodape-esquerdo {
+        text-align: left;
+        width: 35%;
+    }
+    .rodape .rodape-direito {
+        width: 75%;
+        text-align: right;
+    }
+}
